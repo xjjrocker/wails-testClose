@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <title>myWails1</title>
+  <link rel="stylesheet" href="/main.css">
+</head>
+
+<body data-wails-drag>
+  <div class="logo"></div>
+  <div class="result" id="result">Please enter your name below 👇</div>
+  <div class="input-box" id="input" data-wails-no-drag>
+    <input class="input" id="name" type="text" autocomplete="off">
+    <button class="btn" onclick="greet()">Greet</button>
+    <button class="btn" onclick="onclickQuit()">quit</button>
+    <button class="btn" onclick="quit()">close</button>
+<!--    <button class="btn" id="close">Close</button>-->
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+<script>
+        function onclickQuit() {
+            window.runtime.Quit();
+        };
+</script>
+</html>
